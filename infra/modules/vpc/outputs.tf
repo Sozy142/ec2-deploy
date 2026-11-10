@@ -1,0 +1,9 @@
+output "vpc_id" {
+    description = "VPC id"
+    value = aws_vpc.main.id
+}
+
+output "security_group_id" {
+  description = "EC2 security group ID"
+  value       = aws_security_group.ec2_sg.id
+}
